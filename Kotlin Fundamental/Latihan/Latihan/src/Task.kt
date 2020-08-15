@@ -21,13 +21,8 @@ fun main() {
     """.trimIndent())
 }
 
-fun calculateResult(valueA: Int, valueB: Int, valueC: Int?): Int {
-    // TODO
-    val valueCNotNull = if (valueC == null){
-        50
-    } else {
-        valueC
-    }
+fun calculateResult(valueA: Int, valueB: Int, valueC: Int?) 
+    = valueA + (valueB - (valueC ?: 50))
 
     val valueA = valueA
     val valueB = valueB
